@@ -1,0 +1,12 @@
+{
+  "best_threshold": 0.25,
+  "base_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "num_epochs": 5,
+  "val_f1": 0.9292,
+  "val_auc": 0.979,
+  "validation_report": "              precision    recall  f1-score   support\n\n           0       0.92      0.94      0.93      2232\n           1       0.94      0.92      0.93      2268\n\n    accuracy                           0.93      4500\n   macro avg       0.93      0.93      0.93      4500\nweighted avg       0.93      0.93      0.93      4500\n",
+  "test_accuracy": 0.93,
+  "test_f1": 0.9305,
+  "test_auc": 0.9793,
+  "test_report": "              precision    recall  f1-score   support\n\n           0       0.93      0.93      0.93      2233\n           1       0.93      0.93      0.93      2267\n\n    accuracy                           0.93      4500\n   macro avg       0.93      0.93      0.93      4500\nweighted avg       0.93      0.93      0.93      4500\n"
+}
