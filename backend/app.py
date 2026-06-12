@@ -240,7 +240,9 @@ st.markdown(
 # =========================
 @st.cache_resource
 def load_engine():
-    return PlagiarismPredictor(model_dir="models")
+    return PlagiarismPredictor(
+    model_dir=os.path.join(os.path.dirname(os.path.abspath(__file__)), "models")
+)
 
 
 predictor = load_engine()
