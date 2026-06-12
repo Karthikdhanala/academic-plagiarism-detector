@@ -28,7 +28,12 @@ def _sigmoid(x: float) -> float:
 
 
 class PlagiarismPredictor:
-    def __init__(self, model_dir: str = "models"):
+    def __init__(self, model_dir: str = None):
+        if model_dir is None:
+            model_dir = os.path.join(
+                os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                "models"
+            )
         self._ready = False
         self.best_threshold = 0.5
         self.tfidf_vec = None
